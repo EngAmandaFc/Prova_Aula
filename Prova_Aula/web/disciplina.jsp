@@ -15,8 +15,8 @@
         disciplinaList.add(new Disciplina("LP IV", "Comandos de linguagens usadas na construção e estruturação de sites para a Web, com páginas dinâmi­cas e interativas. Definição de layouts e formatação em geral. Adição de algorítmos usando laços, matrizes, datas, funções e condições. Introdução a Orientação a Objetos utilizando objetos, métodos e propriedades. Integração com Banco de Dados. Exercícios práticos com projeto de criação de sites.",4, 0.0));
         disciplinaList.add(new Disciplina("SO II", "Apresentação de um sistema operacional específico utilizado em ambiente corporativo. Requisitos de hardware para instalação do sistema. Processo de instalação, personalização, operação, administração e segurança sobre o sistema operacional focado. Elaboração de projetos de seleção e implantação de um sistema operacional.",4, 0.0));
         disciplinaList.add(new Disciplina("Inglês IV", "Aprofundamento da compreensão e produção oral e escrita por meio funções sociais e estruturas mais complexas da língua. Ênfase na oralidade, atendendo às especificidades acadêmico-profissionais da área e abordando aspectos sócio-culturais da língua inglesa",4, 0.0));
-        disciplinaList.add(new Disciplina("Inglês V", "Aprofundamento da compreensão e produção oral e escrita por meio funções sociais e estruturas mais complexas da língua. Ênfase na oralidade, atendendo às especificidades acadêmico-profissionais da área e abordando aspectos sócio-culturais da língua inglesa",4, 0.0));
-        disciplinaList.add(new Disciplina("SEG INF", "Requisitos de segurança de aplicações, de base de dados e de comunicações. Segurança de dispositivos móveis. Políticas de segurança. Criptografia. Firewalls. Vulnerabilidades e principais tecnologias de segurança.",4, 0.0));
+        disciplinaList.add(new Disciplina("Inglês V", "Aprofundamento da compreensão e produção oral e escrita por meio funções sociais e estruturas mais complexas da língua. Ênfase na oralidade, atendendo às especificidades acadêmico-profissionais da área e abordando aspectos sócio-culturais da língua inglesa",5, 0.0));
+        disciplinaList.add(new Disciplina("SEG INF", "Requisitos de segurança de aplicações, de base de dados e de comunicações. Segurança de dispositivos móveis. Políticas de segurança. Criptografia. Firewalls. Vulnerabilidades e principais tecnologias de segurança.",5, 0.0));
         disciplinaList.add(new Disciplina("BD", "Conceitos de Base de Dados.Modelos de Dados: Relacional, Redes e Hierárquicos. Modelagem de dados - conceitual, lógica e física. Teoria relacional: dependências funcionais e multivaloradas, formas normais. Restrições de integridade e de segurança em Banco de Dados Relacional. Sistemas Gerenciadores de Banco de Dados – objetivo e funções. Linguagens de declaração e de manipulação de dados.",4, 0.0));
         application.setAttribute("disciplinaList", disciplinaList);
     }
@@ -53,7 +53,7 @@
             </tr>
             <%for(int i=0; i<disciplinaList.size(); i++){%>
             <tr>
-                <td><%= i %></td>
+                
                 <% Disciplina u = disciplinaList.get(i); %>
                 <td align="center"><%= u.getName() %></td>
                 <td align="center"><%= u.getEmenta() %></td>
